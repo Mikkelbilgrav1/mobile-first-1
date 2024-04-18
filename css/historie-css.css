@@ -1,7 +1,18 @@
 /* roots */
 
+@media (max-witdh: 390){  
+}
+
+@media (max-witdh: 1024){  
+}
+
+@media (max-witdh: 1440){  
+}
+
 body {
     background-color: #d35b00;
+    margin: 0;
+
 }
 
 .baggrund-historie {
@@ -13,8 +24,15 @@ body {
 .opstart {
     display: flex;
     flex-direction: column;
+    margin: 15%;
+}
+
+.opstart-billede {
+    width: 100%;
+    height: auto;
 }
 
 .opstart-headline, .corona-krise-headline, .sidste-ord-headline{
     text-align: center;
 }
+
