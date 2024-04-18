@@ -1,0 +1,20 @@
+/* roots */
+
+body {
+    background-color: #d35b00;
+}
+
+.baggrund-historie {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.opstart {
+    display: flex;
+    flex-direction: column;
+}
+
+.opstart-headline, .corona-krise-headline, .sidste-ord-headline{
+    text-align: center;
+}
