@@ -1,13 +1,5 @@
 /* roots */
 
-@media (max-witdh: 390){  
-}
-
-@media (max-witdh: 1024){  
-}
-
-@media (max-witdh: 1440){  
-}
 
 body {
     background-color: #d35b00;
@@ -34,5 +26,23 @@ body {
 
 .opstart-headline, .corona-krise-headline, .sidste-ord-headline{
     text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-rækker {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.copyrights{
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
