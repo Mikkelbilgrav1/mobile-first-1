@@ -16,7 +16,9 @@ body {
 .opstart {
     display: flex;
     flex-direction: column;
-    margin: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
 }
 
 .opstart-billede {
@@ -24,6 +26,34 @@ body {
     height: auto;
 }
 
+.corona-krise {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+}
+
+.corona-billede {
+    width: 100%;
+    height: auto;
+}
+
+.sidste-ord {
+    display: flex;
+    flex-direction: column;
+}
+
+.tekst-sidste-ord {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+}
+
+.sidste-billede {
+    width: 100%;
+    height: 10px;
+}
 .opstart-headline, .corona-krise-headline, .sidste-ord-headline{
     text-align: center;
 }
