@@ -69,7 +69,7 @@ margin-right: 1em;
         color: black;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 0.8rem;
         display: block;
         color: #000;
         font-family: "Work Sans";
@@ -88,8 +88,10 @@ margin-right: 1em;
         position: absolute;
         right: 0;
         top: 0;
+        font-size: 1.5rem;
       }
       .topnavmobile .active {
+        font-size: 1.5rem;
         color: #000;
         font-family: "Roboto Flex";
         font-style: normal;
@@ -108,18 +110,18 @@ padding: 3rem 1rem;
 
       .herotext h1 {
         color: #000;
-
 font-family: "Roboto Flex";
-font-size: 2rem;
+font-size: 6vw;
 font-style: normal;
 font-weight: 700;
-line-height: 1.6875rem; /* 112.5% */
 letter-spacing: 0.03rem;
+line-height: 90%;
       }
+      
       .herotext h3 {
         color: #000;
 font-family: "DM Sans";
-font-size: 1rem;
+font-size: 4vw;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
@@ -264,6 +266,236 @@ padding: 0rem 1.5rem;
                     display: flex;
                     gap: 20%;
                     justify-content: end;
+                }
+                
+                .jumbo-copy {
+                    display: flex;
+                    gap: 10px;
+                    justify-content: start;
+                    align-items: center;
+                }
+
+                .footerline img {
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    width: 100vw;
+                    padding: 0.5rem 2rem;
+                }
+  }
+
+  @media only screen and (max-width: 390px) {
+    .navbar {
+        display: none;
+    }
+    .topnavmobile {
+        display: block;
+        overflow: hidden;
+        background-color: #FF5C00;
+        position: relative;
+      }
+      .topnavmobile a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 0.8rem;
+        display: block;
+        color: #000;
+        font-family: "Work Sans";
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+
+      .topnavmobile #myLinks {
+        display: none;
+      }
+      .topnavmobile a.icon {
+        background: rgba(0, 0, 0, 0);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 1.5rem;
+      }
+      .topnavmobile .active {
+        font-size: 1.5rem;
+        color: #000;
+        font-family: "Roboto Flex";
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.08rem;
+      }
+
+      .herotext {
+        display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 2rem 1rem;
+      }
+
+      .herotext h1 {
+        color: #000;
+font-family: "Roboto Flex";
+font-size: 6vw;
+font-style: normal;
+font-weight: 700;
+letter-spacing: 0.03rem;
+line-height: 90%;
+      }
+      
+      .herotext h3 {
+        color: #000;
+font-family: "DM Sans";
+font-size: 4vw;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.015rem;
+}
+
+.text-image-container {
+    display: flex;
+}
+
+.text-image-container  img {
+    height: auto;
+    width: 50vw;
+}
+
+.location {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 2rem 2rem;
+row-gap: 1.5rem;
+}
+
+.location h1 {
+    color: #000;
+    
+    font-family: "Roboto Flex";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04rem;
+    }
+
+    .location h3 {
+        color: #000;
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 1.1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        }
+
+        .location h4 {
+            color: #000;
+            text-align: center;
+            font-family: "DM Sans";
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            }
+            
+            .location img {
+height: auto;
+width: 100vw;
+padding: 0rem 1.5rem;
+                }
+
+                .instagram {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .instagram h1 {
+                    color: #000;
+                    text-align: center;
+                    font-family: "Roboto Flex";
+                    font-size: 2rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.04rem;
+                    padding: 2rem;
+                }
+                .instagram svg {
+                    margin-bottom: 1rem;
+                }
+
+                .instagram img {
+                    height: auto;
+                    width: 100vw;
+                    padding: 0.5rem 1.5rem;
+                }
+                .nyhedsbrev img {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 2rem 1.5rem;
+                    height: auto;
+                    width: 100vw;
+                }
+
+                .footer {                    
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                
+                .footer p {                    
+                    color: #363636;
+                    font-family: "Work Sans";
+                    font-size: 2vw;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-transform: uppercase;
+                }
+
+                .footer h4 {                    
+                    color: #000;
+                    font-family: "Work Sans";
+                    font-size: 3vw;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-transform: uppercase;
+                }
+                
+                .footer-rækker {
+                    display: flex;
+                    justify-content: space-around;
+                    margin-bottom: 3%;
+                    font-size: 2vw;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                }
+                
+                .copyrights{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 2vw;
+                    margin-left: 7%;
+                    margin-right: 5%;
+                
+                }
+                
+                .logoer {
+                    display: flex;
+                    gap: 20%;
+                    justify-content: end;
+                    width: 10vw;
+                    height: auto;
                 }
                 
                 .jumbo-copy {
