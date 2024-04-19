@@ -1,6 +1,6 @@
 /* roots */
 
-
+/*
 body {
     background-color: #d35b00;
     margin: 0;
@@ -52,7 +52,7 @@ body {
 
 .sidste-billede {
     width: 100%;
-    height: 10px;
+    height: auto;
 }
 .opstart-headline, .corona-krise-headline, .sidste-ord-headline{
     text-align: center;
@@ -90,3 +90,200 @@ body {
     justify-content: start;
     margin-left: 6%;
 }
+*/
+
+@media screen and (max-width: 390px) {
+    body {
+        background-color: #d35b00;
+        margin: 0;
+    
+    }
+    
+    .baggrund-historie {
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+    
+    .opstart {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+    }
+    
+    .opstart-billede {
+        width: 100%;
+        height: auto;
+    }
+    
+    .corona-krise {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+    }
+    
+    .corona-billede {
+        width: 100%;
+        height: auto;
+    }
+    
+    .sidste-ord {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tekst-sidste-ord {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+    }
+    
+    .sidste-billede {
+        width: 100%;
+        height: auto;
+    }
+    .opstart-headline, .corona-krise-headline, .sidste-ord-headline{
+        text-align: center;
+    }
+    
+    hr.new1 {
+        border-top: 1px solid red;
+      }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        /* border-top: 1px solid black; */
+    }
+    
+    .footer-rækker {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 3%;
+        font-size: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .copyrights{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+    
+    }
+    
+    .logoer {
+        display: flex;
+        gap: 20%;
+        justify-content: end;
+    }
+    
+    .jumbo-copy {
+        display: flex;
+        gap: 10px;
+        justify-content: start;
+        align-items: center;
+    }
+    
+  }
+  
+  @media screen and (min-width: 391px) {
+    body {
+        background-color: #d35b00;
+        margin: 0;
+    
+    }
+    
+    .baggrund-historie {
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+    
+    .opstart {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+    }
+    
+    .opstart-billede {
+        width: 100%;
+        height: auto;
+    }
+    
+    .corona-krise {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+    }
+    
+    .corona-billede {
+        width: 100%;
+        height: auto;
+    }
+    
+    .sidste-ord {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tekst-sidste-ord {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+    }
+    
+    .sidste-billede {
+        width: 100%;
+        height: auto;
+    }
+    .opstart-headline, .corona-krise-headline, .sidste-ord-headline{
+        text-align: center;
+    }
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .footer-rækker {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 3%;
+    }
+    
+    .copyrights{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    .logoer {
+        display: flex;
+        gap: -10%;
+        justify-content: end;
+        margin-right: 3%;
+    }
+    
+    .jumbo-copy {
+        display: flex;
+        gap: 10px;
+        justify-content: start;
+        margin-left: 6%;
+    }
+    
+  }
