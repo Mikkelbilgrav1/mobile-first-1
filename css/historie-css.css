@@ -93,6 +93,48 @@ body {
 */
 
 @media screen and (max-width: 390px) {
+    .navbar {
+        display: none;
+    }
+    .topnavmobile {
+        display: block;
+        overflow: hidden;
+        background-color: #FF5C00;
+        position: relative;
+      }
+      .topnavmobile a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 1.5rem;
+        display: block;
+        color: #000;
+        font-family: "Work Sans";
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+
+      .topnavmobile #myLinks {
+        display: none;
+      }
+      .topnavmobile a.icon {
+        background: rgba(0, 0, 0, 0);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnavmobile .active {
+        color: #000;
+        font-family: "Roboto Flex";
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.08rem;
+      }
+
     body {
         background-color: #d35b00;
         margin: 0;
@@ -149,7 +191,7 @@ body {
     .opstart-headline, .corona-krise-headline, .sidste-ord-headline{
         text-align: center;
     }
-    
+   /* 
     hr.new1 {
         border-top: 1px solid red;
       }
@@ -158,7 +200,6 @@ body {
         display: flex;
         flex-direction: column;
         background-color: white;
-        /* border-top: 1px solid black; */
     }
     
     .footer-rækker {
@@ -191,6 +232,72 @@ body {
         gap: 10px;
         justify-content: start;
         align-items: center;
+    } */
+
+    .footer {                    
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .footer p {                    
+        color: #363636;
+        font-family: "Work Sans";
+        font-size: 0.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .footer h4 {                    
+        color: #000;
+        font-family: "Work Sans";
+        font-size: 0.7rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    
+    .footer-rækker {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 3%;
+        font-size: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .copyrights{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 10px;
+        margin-left: 7%;
+        margin-right: 5%;
+    
+    }
+    
+    .logoer {
+        display: flex;
+        gap: 20%;
+        justify-content: end;
+    }
+    
+    .jumbo-copy {
+        display: flex;
+        gap: 10px;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .footerline img {
+        height: auto;
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        padding: 0.5rem 2rem;
     }
     
   }
