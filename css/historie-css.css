@@ -92,7 +92,7 @@ body {
 }
 */
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 391px) {
     .navbar {
         display: none;
     }
@@ -136,7 +136,7 @@ body {
       }
 
     body {
-        background-color: #d35b00;
+        background-color: #FF5C00;
         margin: 0;
         font-family: 'work sans';
     }
@@ -249,10 +249,12 @@ body {
         font-weight: 400;
         line-height: normal;
         text-transform: uppercase;
-
     }
 
-    
+    .footer-farve {
+        background-color: #d35b00;
+    }
+
     .footer p {                    
         color: #363636;
         font-family: "Work Sans";
