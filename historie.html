@@ -5,12 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/historie-css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="/js/js.js"></script>
 </head>
+
+<header>
+    <nav class="navbar">
+        <div class="left-links">
+          <a href="#">SHOP</a>
+          <a href="#">BILLEDER</a>
+          <a href="#">OM OS</a>
+        </div>
+        <div class="company-name">JUMBO BAKERY</div>
+        <div class="right-links">
+          <a href="#">SORTIMENT</a>
+          <a href="#">LOKATIONER</a>
+        </div>
+    </nav>
+      <div class="topnavmobile">
+        <a href="#home" class="active">JUMBO</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="#news">Shop</a>
+          <a href="#contact">Billeder</a>
+          <a href="#about">Om Os</a>
+                <a href="#">SORTIMENT</a>
+          <a href="#">LOKATIONER</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+</header>
+
 <body>
-
-<header></header>
-
-
 <main>
     <section>
         <img src="img/jumbo bakery - historie.webp" alt="baggrund-historie" class="baggrund-historie">
@@ -29,7 +61,7 @@
     </section>
     <section class="corona-krise">
         <h2 class="corona-krise-headline">Corona-krise</h2>
-        <p>MEN, for der er jo altid et MEN.
+        <p>MEN, for der er jo altid et MEN. <br><br>
 
         To år var nu gået, og det havde været spændende på alle mulige måder. Vi var gået fra cirka 5 til 10 medarbejdere og havde stadig råd til at betale huslejen. Så langt så godt. Andet år gik vi fra cirka 10 til 17 medarbejdere. Steady fremad gik det.
 
@@ -72,13 +104,13 @@
         <section class="footer-rækker">
             <article>
                 <h4>SHOP</h4>
-                <p>PRODUKTER LINK!</p>
+                <a href="produkter.html" class="footer-link">PRODUKTER</a>
                 <p>BESTILLINGER</p>
                 <p>AFHENTNING</p>
             </article>
             <article>
                 <h4>BILLEDER</h4>
-                <p>FOTOGALLERI LINK!</p>
+                <a href="fotogalleri.html" class="footer-link">FOTOGALLERI</a>
                 <p>OPSKRIFTER</p>
                 <p>INSTAGRAM</p>
             </article>
@@ -92,7 +124,7 @@
                 <h4>OM OS</h4>
                 <p>KONTAKT</p>
                 <p>INFO</p>
-                <p>HISTORIE LINK!</p>
+                <a href="historie.html" class="footer-link">HISTORIE</a>
             </article>
             <article>
                 <h4>SORTIMENT</h4>
@@ -107,7 +139,7 @@
                 <p>JUMBO BAKERY</p>
             </article>
             <article>
-                <p>©2024 Jumbo Bakery. All Rights Reserved</p>
+                <p>©2024 All Rights Reserved</p>
             </article>
             </section>
             <section class="logoer">
