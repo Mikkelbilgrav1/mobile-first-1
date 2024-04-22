@@ -92,7 +92,7 @@ body {
 }
 */
 
-@media screen and (max-width: 391px) {
+@media screen and (max-width: 390px) {
     .navbar {
         display: none;
     }
@@ -317,9 +317,102 @@ body {
     
   }
   
-  @media screen and (min-width: 391px) {
+  @media screen and (min-width: 390px) {
     body {
         background-color: #d35b00;
+        margin: 0;
+    
+    }
+    
+    .baggrund-historie {
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+    
+    .opstart {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+    }
+    
+    .opstart-billede {
+        width: 100%;
+        height: auto;
+    }
+    
+    .corona-krise {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+    }
+    
+    .corona-billede {
+        width: 100%;
+        height: auto;
+    }
+    
+    .sidste-ord {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tekst-sidste-ord {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+    }
+    
+    .sidste-billede {
+        width: 100%;
+        height: auto;
+    }
+    .opstart-headline, .corona-krise-headline, .sidste-ord-headline{
+        text-align: center;
+    }
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .footer-rækker {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 3%;
+    }
+    
+    .copyrights{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    .logoer {
+        display: flex;
+        gap: -10%;
+        justify-content: end;
+        margin-right: 3%;
+    }
+    
+    .jumbo-copy {
+        display: flex;
+        gap: 10px;
+        justify-content: start;
+        margin-left: 6%;
+    }
+    
+  }
+
+  @media screen and (min-width: 800px) {
+    body {
+        background-color: #4d3625;
         margin: 0;
     
     }
