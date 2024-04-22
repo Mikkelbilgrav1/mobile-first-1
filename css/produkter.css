@@ -1,54 +1,75 @@
 /* Global Styles */
 body {
-    background-color: #FF5C00;
-  }
-  
-  .nav {
-    width: 100%;
-    height: 75px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1E3F5A;
-    border-bottom: 1px solid;
-    box-shadow: 0 5px 10px -6px #000000;
-    position: fixed;
-    z-index: 1;
-  }
-  
-  .nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 100px;
-    margin-right: 20px; /* Justeret margin mellem navigationslinks */
-  }
-  
-  .nav a:hover {
-    color: #FFA500;
-    transition: all 0.4s ease 0s;
-  }
-  
-  /* Hero Section Styles */
-  .hero {
-    background-position: center;
-    color: #ffffff;
-    padding: 100px 0;
-    background-size: cover;
-    text-align: center;
-    height: 300px;
-    background-repeat: repeat-y;
-  }
-  
-  .hero-heading {
-    font-size: 48px;
-    font-weight: bold;
-    font-family: "Mohave", sans-serif;
-  }
-  
-  .hero-subheading {
-    font-size: 24px;
-    font-family: "Almarai", sans-serif;
-  
-  }
+  background-color: #FF5C00;
+  margin: 0; /* Fjerner standardmarginer */
+  font-family: 'Roboto Flex', sans-serif; /* Tilføjet skrifttype */
+}
 
+.navbar {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1E3F5A;
+  border-bottom: 1px solid;
+  box-shadow: 0 5px 10px -6px #000000;
+  position: fixed;
+  z-index: 1;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin: 0 20px; /* Tilpasset afstand mellem links */
+}
+
+.hero {
+  background-position: center;
+  color: #ffffff;
+  padding: 100px 0;
+  background-size: cover;
+  text-align: center;
+  background-repeat: no-repeat; /* Fjernet gentagelse af baggrundsbillede */
+  position: relative;
+}
+
+.hero-heading {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 0; /* Fjerner standard øverste margen */
+}
+
+.hero img {
+  max-width: 100%; /* Tilpasser billedets bredde til forælderens bredde */
+  height: auto;
+}
+
+.container {
+  max-width: 1200px; /* Tilføjet maksimal bredde til containeren */
+  margin: 0 auto; /* Centrerer containeren */
+  padding: 0 20px; /* Tilføjet padding til containeren */
+}
+
+.boxes {
+  padding: 20px 0; /* Tilføjet padding over og under kasserne */
+}
+
+.box {
+  background-color: #FF5C00;
+  margin-bottom: 20px; /* Tilpasset afstand mellem kasserne */
+  padding: 20px; /* Tilføjet padding til kasserne */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tilføjet skyggeeffekt til kasserne */
+  position: relative; /* Tilføjet position: relative for at gøre hover-effekten korrekt */
+  transition: transform 0.3s ease; /* Tilføjet overgangseffekt til transform */
+}
+
+.article-heading {
+  margin-top: 0; /* Fjerner standard øverste margen */
+}
+
+.box img:hover {
+  opacity: 1; /* Ændrer gennemsigtigheden, når musen holdes over billedet */
+  transform: scale(1.1); /* Skalerer billedet en smule større */
+}
