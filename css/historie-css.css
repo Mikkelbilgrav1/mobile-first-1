@@ -1,7 +1,7 @@
  * {
+    margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-
 }
 
 
@@ -27,7 +27,6 @@ nav {
     line-height: normal;
     letter-spacing: -0.1rem;
     margin-right: 1em;
-
 }
 
 nav a {
@@ -110,6 +109,7 @@ Media querries og størrelserne
         font-family: 'work sans';
     }
     
+
     h1, h2, h3, h4 {
         font-family: 'roboto flex';
     }
@@ -128,34 +128,44 @@ Media querries og størrelserne
         margin-bottom: 5%;
         margin-top: 5%;
     }
+
+    .opstart p, .corona-krise-første p, .corona-krise-anden p, .sidste-ord p {
+        margin: 5%;
+    }
     
     .opstart-billede {
         width: 100%;
         height: auto;
     }
     
-    .corona-krise {
+    .corona-krise-første {
         display: flex;
         flex-direction: column;
         margin-left: 15%;
         margin-right: 15%;
         margin-bottom: 5%;
     }
-    
+
     .corona-billede {
         width: 100%;
         height: auto;
     }
     
+    .corona-krise-anden {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+    }
+
     .sidste-ord {
         display: flex;
         flex-direction: column;
     }
     
     .tekst-sidste-ord {
-        margin-left: 15%;
-        margin-right: 15%;
-        margin-bottom: 5%;
+        margin-top: 5%;
     }
     
     .sidste-billede {
@@ -166,27 +176,24 @@ Media querries og størrelserne
         text-align: center;
     }
 
-    .footer .footer-link {                    
-        display: flex;
-        flex-direction: column;
-        text-decoration: none;
-        color: #363636;
-        font-family: "Work Sans";
-        font-size: 0.6rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        text-transform: uppercase;
-    }
-
     .footer-farve {
         background-color: #d35b00;
+    }
+    
+    hr {
+        margin: 1rem 1rem;
+        border-color: rgb(1, 1, 1);
+      }
+
+    .footer {                    
+        display: flex;
+        flex-direction: column;
     }
 
     .footer p {                    
         color: #363636;
         font-family: "Work Sans";
-        font-size: 0.6rem;
+        font-size: 2vw;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -196,7 +203,7 @@ Media querries og størrelserne
     .footer h4 {                    
         color: #000;
         font-family: "Work Sans";
-        font-size: 0.7rem;
+        font-size: 3vw;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -207,16 +214,21 @@ Media querries og størrelserne
         display: flex;
         justify-content: space-around;
         margin-bottom: 3%;
-        font-size: 10px;
+        font-size: 2vw;
         margin-left: 5%;
         margin-right: 5%;
+    }
+
+    .footer-link {
+        text-decoration: none;
+        color: #363636;
     }
     
     .copyrights{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 10px;
+        font-size: 2vw;
         margin-left: 7%;
         margin-right: 5%;
     
@@ -226,6 +238,8 @@ Media querries og størrelserne
         display: flex;
         gap: 20%;
         justify-content: end;
+        width: 10vw;
+        height: auto;
     }
     
     .jumbo-copy {
@@ -353,7 +367,7 @@ Media querries og størrelserne
     
     .footer-rækker {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         margin-bottom: 3%;
     }
     
@@ -380,67 +394,26 @@ Media querries og størrelserne
     
   }
 
-  @media screen and (min-width: 800px) {
-    
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 74px;
-    }
-    
-    .company-name {
-        color: #000;
-        font-family: "Roboto Flex";
-        font-size: 1.25rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: -0.1rem;
-    margin-right: 1em;
-    
-    }
-    
-    nav a {
-    color: #000;
-    font-family: "Work Sans";
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 107.292%; /* 1.07294rem */
-    letter-spacing: -0.05rem;
-    text-decoration: none;
-    margin-right: 1em;
-    }
-    
-    /* Style the navigation menu */
-    .topnavmobile {
-        display: none;
-        overflow: hidden;
-        background-color: #333;
-        position: relative;
-      }
-      
-      /* Hide the links inside the navigation menu (except for logo/home) */
-      .topnavmobile #myLinks {
-        display: none;
-      }
-    
-      /*
+  @media screen and (min-width: 1200px) {
     .navbar {
-        display: none;
+        display: flex;
     }
+
     .topnavmobile {
         display: block;
+        display: none;
         overflow: hidden;
         background-color: #FF5C00;
-        position: relative;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
       }
+
       .topnavmobile a {
         color: black;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 0.8rem;
         display: block;
         color: #000;
         font-family: "Work Sans";
@@ -453,14 +426,18 @@ Media querries og størrelserne
       .topnavmobile #myLinks {
         display: none;
       }
+
       .topnavmobile a.icon {
         background: rgba(0, 0, 0, 0);
         display: block;
         position: absolute;
         right: 0;
         top: 0;
+        font-size: 1.5rem;
       }
+
       .topnavmobile .active {
+        font-size: 1.5rem;
         color: #000;
         font-family: "Roboto Flex";
         font-style: normal;
@@ -468,95 +445,167 @@ Media querries og størrelserne
         line-height: normal;
         letter-spacing: -0.08rem;
       }
-    */
-    body {
-        background-color: #4d3625;
-        margin: 0;
     
+    body {
+        background-color: #FF5C00;
+        margin: 0;
     }
     
     .baggrund-historie {
         display: flex;
         width: 100%;
-        height: auto;
+        height: 40vh;
     }
     
     .opstart {
         display: flex;
         flex-direction: column;
-        margin-left: 15%;
-        margin-right: 15%;
-        margin-bottom: 5%;
+        margin: 0;
+    }
+
+    .opstart-tekst-billede {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 1.5rem;
+        font-family: 'work sans';
     }
     
     .opstart-billede {
-        width: 100%;
-        height: auto;
+        max-width: 40%;
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
-    
-    .corona-krise {
+
+    .corona-krise-første {
         display: flex;
         flex-direction: column;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    
+    .corona-kolonne {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        font-size: 1.5rem;
+        font-family: 'work sans';
+    }
+
+    .corona-billede {
+        max-width: 40%;
+        margin-right: 5%;
+        margin-top: 5%;
         margin-bottom: 5%;
     }
     
-    .corona-billede {
-        width: 100%;
-        height: auto;
+    .corona-krise-anden {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        font-size: 1.5rem;
+        font-family: 'work sans';
     }
-    
+
     .sidste-ord {
         display: flex;
         flex-direction: column;
+        font-size: 1.5rem;
+        font-family: 'work sans';
     }
     
     .tekst-sidste-ord {
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 5%;
+        margin-right: 5%;
         margin-bottom: 5%;
+    }
+
+    .tekst-sidste-ord p {
+        margin-top: 5%;
     }
     
     .sidste-billede {
-        width: 100%;
-        height: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
     .opstart-headline, .corona-krise-headline, .sidste-ord-headline{
         text-align: center;
+        font-size: 6vh;
+        font-family: 'roboto flex';
+        margin: 1%;
     }
     
+    hr {
+        margin: 1rem 1rem;
+        border-color: rgb(1, 1, 1);
+      }
+
     .footer {
         display: flex;
         flex-direction: column;
-    
     }
     
+    .footer p {                    
+        color: #363636;
+        font-family: "Work Sans";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .footer h4 {                    
+        color: #000;
+        font-family: "Work Sans";
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .footer-link {
+        text-decoration: none;
+        color: #363636;
+    }
+
     .footer-rækker {
         display: flex;
         justify-content: space-evenly;
         margin-bottom: 3%;
+        font-size: 2vw;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     
     .copyrights{
         display: flex;
         justify-content: space-between;
         align-items: center;
-    
+        font-size: 2rem;
+        margin-left: 7%;
+        margin-right: 5%;
     }
     
     .logoer {
         display: flex;
-        gap: -10%;
+        gap: 20%;
         justify-content: end;
-        margin-right: 3%;
+        width: 5rem;
+        height: auto;
     }
     
     .jumbo-copy {
         display: flex;
         gap: 10px;
         justify-content: start;
-        margin-left: 6%;
+        align-items: center;
     }
     
   }
