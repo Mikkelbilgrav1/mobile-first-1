@@ -5,40 +5,84 @@ body {
   font-family: 'Roboto Flex', sans-serif; /* Tilføjet skrifttype */
 }
 
-.navbar {
-  width: 100%;
-  height: 75px;
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1E3F5A;
-  border-bottom: 1px solid;
-  box-shadow: 0 5px 10px -6px #000000;
-  position: fixed;
-  z-index: 1;
+  padding: 20px 74px;
 }
 
-.navbar a {
+nav a {
+  color: #000;
+  font-family: "Work Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 107.292%; /* 1.07294rem */
+  letter-spacing: -0.05rem;
   text-decoration: none;
-  color: white;
-  font-size: 18px;
-  margin: 0 20px; /* Tilpasset afstand mellem links */
+  margin-right: 1em;
 }
 
-.hero {
-  background-position: center;
-  color: #ffffff;
-  padding: 100px 0;
-  background-size: cover;
-  text-align: center;
-  background-repeat: no-repeat; /* Fjernet gentagelse af baggrundsbillede */
+.company-name {
+  color: #000;
+  font-family: "Roboto Flex";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.1rem;
+  margin-right: 1em;
+}
+
+/* Style the navigation menu */
+.topnavmobile {
+  display: none;
+  overflow: hidden;
+  background-color: #333;
   position: relative;
 }
 
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnavmobile #myLinks {
+  display: none;
+}
+
+.hero {
+  position: relative;
+  color: #ffffff;
+  padding: 100px 0;
+  text-align: center;
+  outline: 2px solid #000000;
+}
+
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/hero-image.jpg');
+  background-position: center;
+  background-size: cover;
+  filter: blur(10px); /* Tilføj en sløringseffekt */
+  z-index: -1; /* Sørg for, at pseudo-elementet ligger bag teksten */
+}
+
+
+
 .hero-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Roboto Flex";
   font-size: 48px;
   font-weight: bold;
   margin-top: 0; /* Fjerner standard øverste margen */
+  color: #ffffff; /* Tilføjet tekstfarve */
 }
 
 .hero img {
@@ -46,30 +90,122 @@ body {
   height: auto;
 }
 
-.container {
-  max-width: 1200px; /* Tilføjet maksimal bredde til containeren */
-  margin: 0 auto; /* Centrerer containeren */
-  padding: 0 20px; /* Tilføjet padding til containeren */
-}
+/* CSS Styles for Products Page */
 
 .boxes {
-  padding: 20px 0; /* Tilføjet padding over og under kasserne */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
 }
 
-.box {
-  background-color: #FF5C00;
-  margin-bottom: 20px; /* Tilpasset afstand mellem kasserne */
-  padding: 20px; /* Tilføjet padding til kasserne */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tilføjet skyggeeffekt til kasserne */
-  position: relative; /* Tilføjet position: relative for at gøre hover-effekten korrekt */
-  transition: transform 0.3s ease; /* Tilføjet overgangseffekt til transform */
+/* Boxes Section */
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-.article-heading {
-  margin-top: 0; /* Fjerner standard øverste margen */
+.product {
+  width: 30%;
+  margin-bottom: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.box img:hover {
-  opacity: 1; /* Ændrer gennemsigtigheden, når musen holdes over billedet */
-  transform: scale(1.1); /* Skalerer billedet en smule større */
+.product img {
+  max-width: 500px;
+  height: 450px;
+  box-shadow: 5px 5px 5px 5px #3b3b3b;
+  align-self: center; /* Centrer vandret */
+  transition: box-shadow 0.3s ease; /* Tilføjer en overgangseffekt */
+  margin-left: 780px;
+}
+
+.product img:hover {
+  box-shadow: 0 0 10px 15px rgba(0, 0, 0, 0.3); /* Tilføjer en box-shadow effekt ved hover */
+  transform: scale(1.1); /* Skalerer billedet til 110% størrelse ved hover */
+  outline: 2px solid #000000; /* Tilføjer en hvid outline */
+}
+.product h3 {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 780px;
+  font-size: 45px;
+}
+
+
+
+/* Footer Styles */
+.footer {                    
+  display: flex;
+  flex-direction: column;
+}
+
+.footer p {                    
+  color: #363636;
+  font-family: "Work Sans";
+  font-size: 0.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.footer h4 {                    
+  color: #000;
+  font-family: "Work Sans";
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.footer-rækker {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3%;
+  font-size: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.footer-rækker img {
+  /* Fjern max-width for at tillade billeder at vise i fuld størrelse */
+  width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.footer-rækker .text {
+  font-size: 0.8em;
+}
+
+.logoer {
+  display: flex;
+  gap: 20%;
+  justify-content: end;
+}
+
+.jumbo-copy {
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+  align-items: center;
+}
+
+.footerline img {
+  height: auto;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  padding: 0.5rem 2rem;
+}
+
+/* Additional Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
