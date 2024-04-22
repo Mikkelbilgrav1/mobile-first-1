@@ -4,74 +4,117 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Produkter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/produkter.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="left-links">
-      <a href="#">SHOP</a>
-      <a href="#">BILLEDER</a>
-      <a href="#">OM OS</a>
-    </div>
-    <div class="company-name">JUMBO BAKERY</div>
-    <div class="right-links">
-      <a href="#">SORTIMENT</a>
-      <a href="#">LOKATIONER</a>
-    </div>
-  </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h2 class="hero-heading">Produkter</h2>
-      <p class="hero-subheading"></p>
-      <img src="img/placeholder.png" alt="Hero billede">
-      <br>
-      <a href="#" class="btn btn-primary">Mere info</a>
+<nav class="navbar">
+  <div class="left-links">
+    <a href="#">SHOP</a>
+    <a href="#">BILLEDER</a>
+    <a href="#">OM OS</a>
+  </div>
+  <div class="company-name">JUMBO BAKERY</div>
+  <div class="right-links">
+    <a href="#">SORTIMENT</a>
+    <a href="#">LOKATIONER</a>
+  </div>
+</nav>
+
+<div class="topnavmobile">
+  <a href="#home" class="active">JUMBO</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="#">Shop</a>
+    <a href="#">Billeder</a>
+    <a href="#">Om Os</a>
+    <a href="#">SORTIMENT</a>
+    <a href="#">LOKATIONER</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h2 class="hero-heading">Produkter</h2>
+    <p class="hero-subheading"></p>
+    <img src="img/placeholder.png" alt="Hero billede">
+    <br>
+    <a href="#" class="btn btn-primary">Mere info</a>
+  </div>
+</section>
+
+<!-- Kasser under Hero-sektionen -->
+<section class="boxes">
+  <div class="container">
+    <div class="product">
+      <h3>Hvedebolle</h3>
+      <img src="img/hvedebolle.jpeg" alt="Billede 1">
     </div>
+    <div class="product">
+      <h3>Pain Suisse</h3>
+      <img src="img/painsuisse.jpeg" alt="Billede 2">
+    </div>
+    <div class="product">
+      <h3>Overskrift 3</h3>
+      <img src="img/cookies.png" alt="Billede 3">
+    </div>
+    <div class="product">
+      <h3>Overskrift 4</h3>
+      <img src="img/citrontærte.jpeg" alt="Billede 4">
+    </div>
+    <div class="product">
+      <h3>Overskrift 5</h3>
+      <img src="img/crossaint.jpeg" alt="Billede 5">
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <hr>
+  <section class="footer-rækker">
+    <article>
+      <h4>SHOP</h4>
+      <p>PRODUKTER</p>
+      <p>BESTILLINGER</p>
+      <p>AFHENTNING</p>
+    </article>
+    <article>
+      <h4>BILLEDER</h4>
+      <p>FOTOGALLERI</p>
+      <p>OPSKRIFTER</p>
+      <p>INSTAGRAM</p>
+    </article>
+    <article>
+      <h4>LOKATIONER</h4>
+      <p>ADRESSE</p>
+      <p>EVENTS</p>
+      <p>TEAMBUILDING</p>
+    </article>
+    <article>
+      <h4>OM OS</h4>
+      <p>KONTAKT</p>
+      <p>INFO</p>
+      <p>HISTORIE LINK!</p>
+    </article>
+    <article>
+      <h4>SORTIMENT</h4>
+      <p>BAGVÆRK</p>
+      <p>PRISER</p>
+      <p>SÆSON</p>
+    </article>
   </section>
-
-  <!-- Kasser under Hero-sektionen -->
-  <section class="boxes">
-    <div class="container">
-      <div class="box">
-        <h3 class="article-heading">Crossaint</h3>
-        <img src="img/crossaint.jpeg" alt="Billede 1">
-        <p>500 g hvedemel <br>
-          10 g tørret gær <br>
-          250 ml mælk <br>
-          50 g sukker <br>
-          1 tsk salt <br>
-          250 g smør</p>
-        <a href="#" class="btn btn-primary">Se mere</a>
-      </div>
-
-      <div class="box">
-        <h3 class="article-heading">Hvedebolle</h3>
-        <img src="img/hvedebolle.jpeg" alt="Hvedebolle">
-        <p>300 g aktiv surdejskultur <br>
-          500 g hvedemel <br>
-          250 ml lunken vand <br>
-          10 g salt <br>
-          30 g sukker <br>
-          50 g smør <br>
-          1 æg <br></p>
-        <a href="#" class="btn btn-primary">Se mere</a>
-      </div>
-      <div class="box">
-        <h3 class="article-heading">Hvedebolle med sesam</h3>
-        <img src="img/hvedebollesesam.jpeg" alt="Billede 3">
-        <p>300 g aktiv surdejskultur <br>
-          500 g hvedemel <br>
-          250 ml lunken vand <br>
-          10 g salt <br>
-          30 g sukker <br>
-          50 g smør <br>
-          1 æg
-          Sesamfrø til drys <br></p>
-        <a href="#" class="btn btn-primary">Se mere</a>
-      </div>
-    </div>
-  </section>
-</body>
-</html>
+  <section class="copyrights">
+    <section class="jumbo-copy">
+      <article>
+        <p>JUMBO BAKERY</p>
+      </article>
