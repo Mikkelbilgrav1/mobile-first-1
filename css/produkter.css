@@ -74,47 +74,38 @@ nav a {
 .boxes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 25px;
 }
 
-/* CSS Styles for Products Page */
+/* Boxes Section */
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
 
 .product {
+  width: 30%;
+  margin-bottom: 20px;
   display: flex;
-  flex-direction: row; /* Ændret til række-layout */
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 150px; /* Tilføjet margin mellem produktbokse */
 }
 
 .product img {
   max-width: 500px;
   height: 250px;
   box-shadow: 5px 5px 5px 5px #3b3b3b;
+  align-self: center; /* Centrer vandret */
+  margin-left: 780px;
 }
 
-.product .text {
-  text-align: left;
-  margin-left: 50px; /* Tilføjet margin mellem billede og tekst */
-  flex: 1; /* Fylder resten af pladsen i rækken */
-}
-
-.product .text h3 {
-  margin-top: 0; /* Fjerner standard øverste margin */
-}
-
-/* Tilføjet styles til at placere tekst til højre for billedet */
-.product .text {
-  display: flex;
-  flex-direction: column; /* Ændret til kolonne-layout */
-}
-
-.product .text h3,
-.product .text p {
-  margin: 0; /* Fjerner standardmarginer */
-}
-
-.product .text p {
-  margin-top: 50px; /* Juster afstanden mellem overskrift og tekst */
+.product h3 {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 780px;
+  font-size: 33px;
 }
 
 
