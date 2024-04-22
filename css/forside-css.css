@@ -18,7 +18,7 @@ nav {
     padding: 20px 74px;
 }
 
-.company-name {
+.company-name a {
     color: #000;
     font-family: "Roboto Flex";
     font-size: 1.25rem;
