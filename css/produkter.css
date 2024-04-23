@@ -195,7 +195,7 @@ body {
 
 .product {
   width: 45%; /* Juster bredden af produkterne for større skærme */
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Tilføj margin til bunden af boksene */
 }
 
 .product img {
@@ -203,6 +203,7 @@ body {
   height: auto;
   box-shadow: 5px 5px 5px 5px #3b3b3b;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
+  margin-bottom: 100px; /* Tilføj margin til bunden af billederne */
 }
 
 .product img:hover {
@@ -213,7 +214,9 @@ body {
 .product h3 {
   text-align: center;
   font-size: 2rem; /* Juster skriftstørrelsen for større skærme */
+  margin-bottom: 20px; /* Tilføj margin til bunden af overskrifterne */
 }
+
 
 /* Media Queries for Responsiveness */
 @media only screen and (max-width: 1024px) {
