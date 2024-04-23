@@ -5,23 +5,16 @@ body {
   font-family: 'Roboto Flex', sans-serif; /* Tilføjet skrifttype */
 }
 
-nav {
+/* Navbar */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 74px;
+  padding: 20px;
 }
 
-nav a {
-  color: #000;
-  font-family: "Work Sans";
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 107.292%; /* 1.07294rem */
-  letter-spacing: -0.05rem;
-  text-decoration: none;
-  margin-right: 1em;
+.left-links, .right-links {
+  display: none; /* Skjul de venstre og højre links som standard */
 }
 
 .company-name {
@@ -32,35 +25,28 @@ nav a {
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.1rem;
-  margin-right: 1em;
 }
 
-/* Style the navigation menu */
+/* Top Navigation Mobile */
 .topnavmobile {
-  display: none;
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
   background-color: #333;
-  position: relative;
 }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnavmobile #myLinks {
-  display: none;
+.icon {
+  color: white;
+  font-size: 1.5rem;
 }
 
+/* Hero Section */
 .baggrund-produkter {
   position: relative;
   text-align: center;
-  width: 100%; /* Tilpas bredden til 100% af viewport */
-  overflow: hidden; /* Skjul eventuel overskydende indhold */
-  transition: transform .8s ease; /* Tilføj en overgangseffekt for transform */
-  transform: translateY(0); /* Initial position */
-}
-
-
-.baggrund-produkter img {
-  width: 100%; /* Stræk billedet til at fylde hele containeren */
-  height: auto; /* Behold billedets højde/aspect ratio */
+  width: 100%;
+  overflow: hidden;
 }
 
 .hero-text {
@@ -73,134 +59,85 @@ nav a {
 }
 
 .hero-text h1 {
-  font-size: 7rem; /* Juster størrelsen efter behov */
+  font-size: 7rem;
 }
 
-
-
-
-
-/* CSS Styles for Products Page */
-
-.boxes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
-}
-
-/* Boxes Section */
+/* Product Boxes */
 .boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 20px;
 }
 
 .product {
-  width: 30%;
-  margin-bottom: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 45%; /* Juster bredden af produkterne for større skærme */
+  margin-bottom: 20px;
 }
 
 .product img {
-  max-width: 500px;
-  height: 450px;
+  max-width: 100%;
+  height: auto;
   box-shadow: 5px 5px 5px 5px #3b3b3b;
-  align-self: center; /* Centrer vandret */
-  transition: box-shadow 0.3s ease; /* Tilføjer en overgangseffekt */
-  margin-left: 780px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .product img:hover {
-  box-shadow: 0 0 10px 15px rgba(0, 0, 0, 0.3); /* Tilføjer en box-shadow effekt ved hover */
-  transform: scale(1.1); /* Skalerer billedet til 110% størrelse ved hover */
-  outline: 2px solid #000000; /* Tilføjer en hvid outline */
+  box-shadow: 0 0 10px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
 }
+
 .product h3 {
   text-align: center;
-  margin-top: 10px;
-  margin-left: 780px;
-  font-size: 45px;
+  font-size: 2rem; /* Juster skriftstørrelsen for større skærme */
 }
 
-.company-name:hover {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Tilføjer en skyggeeffekt */
-  transform: scale(1.05); /* Skalér teksten op med 5% */
-}
-
-
-/* Footer Styles */
-.footer {                    
+/* Footer */
+.footer {
   display: flex;
   flex-direction: column;
-}
-
-.footer p {                    
-  color: #363636;
-  font-family: "Work Sans";
-  font-size: 0.6rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: uppercase;
-}
-
-.footer h4 {                    
-  color: #000;
-  font-family: "Work Sans";
-  font-size: 0.7rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: uppercase;
+  align-items: center;
+  padding: 20px;
 }
 
 .footer-rækker {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 3%;
-  font-size: 10px;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-bottom: 20px;
 }
 
-.footer-rækker img {
-  /* Fjern max-width for at tillade billeder at vise i fuld størrelse */
-  width: 100%;
-  height: auto;
-  margin-bottom: 1em;
+.footer h4, .footer p {
+  color: #000;
+  font-family: "Work Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
-.footer-rækker .text {
-  font-size: 0.8em;
-}
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .left-links, .right-links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
 
-.logoer {
-  display: flex;
-  gap: 20%;
-  justify-content: end;
-}
+  .company-name {
+    margin-top: 10px;
+  }
 
-.jumbo-copy {
-  display: flex;
-  gap: 10px;
-  justify-content: start;
-  align-items: center;
-}
+  .product {
+    width: 90%; /* Juster bredden af produkterne for mindre skærme */
+  }
 
-.footerline img {
-  height: auto;
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  padding: 0.5rem 2rem;
-}
-
-/* Additional Styles */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+  .product h3 {
+    font-size: 1.5rem; /* Juster skriftstørrelsen for mindre skærme */
+  }
 }
