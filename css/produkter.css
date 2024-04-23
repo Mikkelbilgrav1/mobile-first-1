@@ -4,12 +4,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
-
-
-html { font-size: 16px; }
+html { 
+  font-size: 16px; 
+}
 
 body {
   background-color: #FF5C00;
@@ -30,20 +29,19 @@ nav {
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.1rem;
-margin-right: 1em;
-
+  margin-right: 1em;
 }
 
 nav a {
-color: #000;
-font-family: "Work Sans";
-font-size: 1rem;
-font-style: normal;
-font-weight: 500;
-line-height: 107.292%; /* 1.07294rem */
-letter-spacing: -0.05rem;
-text-decoration: none;
-margin-right: 1em;
+  color: #000;
+  font-family: "Work Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 107.292%; /* 1.07294rem */
+  letter-spacing: -0.05rem;
+  text-decoration: none;
+  margin-right: 1em;
 }
 
 /* Style the navigation menu */
@@ -61,102 +59,99 @@ margin-right: 1em;
 
 @media only screen and (max-width: 1200px) {
   #heroimg {
-      display: none;
-      width: 25vw;
-      height: auto;
-      margin-left: 50%;
-      margin-top: 15%;
-    }
+    display: none;
+    width: 25vw;
+    height: auto;
+    margin-left: 50%;
+    margin-top: 15%;
+  }
 
-    #deskank {
-      display: none;
-      width: 30vw;
+  #deskank {
+    display: none;
+    width: 30vw;
   }
 
   #instadesk {
-      display: none;
-      width: 50vw;
-      height: auto;
+    display: none;
+    width: 50vw;
+    height: auto;
   }
 
   .location-text-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
   }
 
   hr {
-      margin: 1rem 1rem;
-      border-color: rgb(1, 1, 1);
-    }
+    margin: 1rem 1rem;
+    border-color: rgb(1, 1, 1);
+  }
 
-    #nyhedsbrevdesk {
-      display: none;
-      width: 60vw;
-      height: auto;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 3% 0%;
+  #nyhedsbrevdesk {
+    display: none;
+    width: 60vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3% 0%;
   }
 
   .insta-logo-text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
   }
-  
+
   .navbar {
-      display: none;
+    display: none;
   }
   .topnavmobile {
-      display: block;
-      overflow: hidden;
-      background-color: #FF5C00;
-      position: sticky;
-  top: 0;
-  z-index: 1000;
-    }
-    .topnavmobile a {
-      color: black;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 0.8rem;
-      display: block;
-      color: #000;
-      font-family: "Work Sans";
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      text-transform: uppercase;
-    }
+    display: block;
+    overflow: hidden;
+    background-color: #FF5C00;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .topnavmobile a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    display: block;
+    color: #000;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
 
-    .topnavmobile #myLinks {
-      display: none;
-    }
-    .topnavmobile a.icon {
-      background: rgba(0, 0, 0, 0);
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 0;
-      font-size: 1.5rem;
-    }
-    .topnavmobile .active {
-      font-size: 1.5rem;
-      color: #000;
-      font-family: "Roboto Flex";
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      letter-spacing: -0.08rem;
-    }
-
-  
-
-
+  .topnavmobile #myLinks {
+    display: none;
+  }
+  .topnavmobile a.icon {
+    background: rgba(0, 0, 0, 0);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.5rem;
+  }
+  .topnavmobile .active {
+    font-size: 1.5rem;
+    color: #000;
+    font-family: "Roboto Flex";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.08rem;
+  }
+}
 
 body {
   background-color: #FF5C00;
@@ -235,7 +230,6 @@ body {
   margin-bottom: 20px; /* Tilføj margin til bunden af overskrifterne */
 }
 
-
 /* Media Queries for Responsiveness */
 @media only screen and (max-width: 1024px) {
   .product {
@@ -247,15 +241,10 @@ body {
   }
 }
 
-
-
-
-
 .footer {                    
   display: flex;
   flex-direction: column;
 }
-
 
 .footer p {                    
   color: #363636;
@@ -293,7 +282,6 @@ body {
   font-size: 2vw;
   margin-left: 7%;
   margin-right: 5%;
-
 }
 
 .logoer {
@@ -318,294 +306,3 @@ body {
   width: 100vw;
   padding: 0.5rem 2rem;
 }
-
-#heroimg {
-  display: none;
-  width: 25vw;
-  height: auto;
-  margin-left: 50%;
-  margin-top: 15%;
-}
-
-#deskank {
-  display: none;
-  width: 30vw;
-}
-
-#instadesk {
-  display: none;
-  width: 50vw;
-  height: auto;
-}
-
-.location-text-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-
-hr {
-  margin: 1rem 1rem;
-  border-color: rgb(1, 1, 1);
-}
-
-#nyhedsbrevdesk {
-  display: none;
-  width: 60vw;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 3% 0%;
-}
-
-.insta-logo-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-}
-
-@media only screen and (min-width: 1201px) {
-
-  .herotext {
-      display: flex;
-flex-direction: column;
-padding: 7rem 1rem;
-margin-left: 30%;
-  }
-
-  #heroimg {
-      display: block;
-      width: 25vw;
-      height: auto;
-      margin-left: 50%;
-      margin-top: 15%;
-  }
-
-  .herotext h1 {
-      color: #000;
-      font-family: "Roboto Flex";
-      font-size: 4rem;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 3.6875rem; /* 92.188% */
-      letter-spacing: 0.08rem;
-      padding-bottom: 2rem;
-      width: 80%;
-  }
-  
-  .herotext h3 {
-      color: #000;
-      font-family: "DM Sans";
-      font-size: 1.15rem;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-      letter-spacing: -0.025rem;
-      width: 80%;
-}
-
-.text-image-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2%;
-  background-image: url(/images/bg1.png);
-  background-position: center;
-  background-size: cover;
-
-}
-
-.text-image-container  img {
-  height: auto;
-  width: 50vw;
-  display: none;
-}
-
-#deskank {
-  display: block;
-  width: 30vw;
-}
-
-.location {
-  margin-top: 5%;
-  display: flex;
-  justify-content: space-evenly;
-
-}
-
-.location-text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2.25rem;
-  margin-top: 2%;
-}
-
-.location h1 {
-  color: #000;
-font-family: "Roboto Flex";
-font-size: 2.25rem;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 0.045rem;
-
-  }
-
-  .location h3 {
-      color: #000;
-font-family: "DM Sans";
-font-size: 1.25rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-width: 50rem;
-
-      }
-
-      .location h4 {
-          color: #000;
-font-family: "DM Sans";
-font-size: 0.875rem;
-font-style: normal;
-font-weight: 400;
-line-height: 0.1;
-
-          }
-          
-          .location img {
-              display: none;
-          height: auto;
-          width: 100vw;
-          padding: 0rem 1.5rem;
-              }
-
-              .instagram {
-                  margin-top: 5%;
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: space-around;
-              }
-
-              .insta-logo-text {
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  justify-content: center;
-                  margin-bottom: 4rem;
-              }
-              .instagram h1 {
-                  color: #000;
-                  text-align: center;
-                  font-family: "Roboto Flex";
-                  font-size: 2rem;
-                  font-style: normal;
-                  font-weight: 500;
-                  line-height: normal;
-                  letter-spacing: 0.04rem;
-                  padding: 2rem;
-              }
-              .instagram svg {
-                  margin-bottom: 1rem;
-                  
-              }
-
-              .instagram img {
-                  height: auto;
-                  width: 100vw;
-                  padding: 0.5rem 1.5rem;
-                  display: none;
-              }
-              
-              #instadesk {
-                  display: block;
-                  width: 50vw;
-                  height: auto;
-              }
-              
-              .nyhedsbrev img {
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  padding: 2rem 1.5rem;
-                  height: auto;
-                  width: 100vw;
-                  display: none;
-              }
-
-              #nyhedsbrevdesk {
-                  display: block;
-                  width: 60vw;
-                  height: auto;
-                  margin-left: auto;
-                  margin-right: auto;
-                  padding: 3% 0%;
-              }
-
-              .footer {                    
-                  display: flex;
-                  flex-direction: column;
-              }
-
-              
-              .footer p {                    
-                  color: #363636;
-                  font-family: "Work Sans";
-                  font-size: 1rem;
-                  font-style: normal;
-                  font-weight: 400;
-                  line-height: normal;
-                  text-transform: uppercase;
-              }
-
-              .footer h4 {                    
-                  color: #000;
-                  font-family: "Work Sans";
-                  font-size: 2rem;
-                  font-style: normal;
-                  font-weight: 400;
-                  line-height: normal;
-                  text-transform: uppercase;
-              }
-              
-              .footer-rækker {
-                  display: flex;
-                  justify-content: space-around;
-                  margin-bottom: 3%;
-                  font-size: 2vw;
-                  margin-left: 5%;
-                  margin-right: 5%;
-              }
-              
-              .copyrights{
-                  display: flex;
-                  justify-content: space-between;
-                  align-items: center;
-                  font-size: 2rem;
-                  margin-left: 7%;
-                  margin-right: 5%;
-              
-              }
-              
-              .logoer {
-                  display: flex;
-                  gap: 20%;
-                  justify-content: end;
-                  width: 5rem;
-                  height: auto;
-              }
-              
-              .jumbo-copy {
-                  display: flex;
-                  gap: 10px;
-                  justify-content: start;
-                  align-items: center;
-              }
-
-              hr {
-                  margin: 1rem 1rem;
-                  border-color: rgb(1, 1, 1);
-              }
-      }
