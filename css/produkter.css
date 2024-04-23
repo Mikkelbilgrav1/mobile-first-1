@@ -185,6 +185,24 @@ body {
   font-size: 7rem;
 }
 
+@media only screen and (max-width: 1200px) {
+  .hero-text h1 {
+    font-size: 5rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 4rem; /* Adjust font size for even smaller screens */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 3rem; /* Adjust font size for mobile devices */
+  }
+}
+
 /* Product Boxes */
 .boxes {
   display: flex;
