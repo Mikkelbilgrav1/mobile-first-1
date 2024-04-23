@@ -58,7 +58,7 @@ margin-right: 1em;
 /*  Media querries og størrelserne */
 
 /* ihpone 12-13-14 */ 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 391px) {
 
     .navbar {
         display: none;
@@ -227,6 +227,11 @@ margin-right: 1em;
         color: #363636;
     }
     
+    .footer-link-shop, .footer-link-billeder, .footer-link-lokationer, .footer-link-om-os, .footer-link-sortiment {
+        display: flex;
+        flex-direction: column;
+    }
+
     .copyrights{
         display: flex;
         justify-content: space-between;
@@ -377,6 +382,16 @@ margin-right: 1em;
         margin-bottom: 3%;
     }
     
+    .footer-link {
+        text-decoration: none;
+        color: #363636;
+    }
+    
+    .footer-link-shop, .footer-link-billeder, .footer-link-lokationer, .footer-link-om-os, .footer-link-sortiment {
+        display: flex;
+        flex-direction: column;
+    }
+
     .copyrights{
         display: flex;
         justify-content: space-between;
