@@ -1,20 +1,25 @@
 /* Global Styles */
-body {
-  background-color: #FF5C00;
-  margin: 0; /* Fjerner standardmarginer */
-  font-family: 'Roboto Flex', sans-serif; /* Tilføjet skrifttype */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
-/* Navbar */
-.navbar {
+
+
+html { font-size: 16px; }
+
+body {
+  background-color: #FF5C00;
+}
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-}
-
-.left-links, .right-links {
-  display: none; /* Skjul de venstre og højre links som standard */
+  padding: 20px 74px;
 }
 
 .company-name {
@@ -25,20 +30,138 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.1rem;
+margin-right: 1em;
+
 }
 
-/* Top Navigation Mobile */
+nav a {
+color: #000;
+font-family: "Work Sans";
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: 107.292%; /* 1.07294rem */
+letter-spacing: -0.05rem;
+text-decoration: none;
+margin-right: 1em;
+}
+
+/* Style the navigation menu */
 .topnavmobile {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+  display: none;
+  overflow: hidden;
   background-color: #333;
+  position: relative;
 }
 
-.icon {
-  color: white;
-  font-size: 1.5rem;
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnavmobile #myLinks {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  #heroimg {
+      display: none;
+      width: 25vw;
+      height: auto;
+      margin-left: 50%;
+      margin-top: 15%;
+    }
+
+    #deskank {
+      display: none;
+      width: 30vw;
+  }
+
+  #instadesk {
+      display: none;
+      width: 50vw;
+      height: auto;
+  }
+
+  .location-text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+  }
+
+  hr {
+      margin: 1rem 1rem;
+      border-color: rgb(1, 1, 1);
+    }
+
+    #nyhedsbrevdesk {
+      display: none;
+      width: 60vw;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 3% 0%;
+  }
+
+  .insta-logo-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+  }
+  
+  .navbar {
+      display: none;
+  }
+  .topnavmobile {
+      display: block;
+      overflow: hidden;
+      background-color: #FF5C00;
+      position: sticky;
+  top: 0;
+  z-index: 1000;
+    }
+    .topnavmobile a {
+      color: black;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 0.8rem;
+      display: block;
+      color: #000;
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+
+    .topnavmobile #myLinks {
+      display: none;
+    }
+    .topnavmobile a.icon {
+      background: rgba(0, 0, 0, 0);
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 1.5rem;
+    }
+    .topnavmobile .active {
+      font-size: 1.5rem;
+      color: #000;
+      font-family: "Roboto Flex";
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.08rem;
+    }
+
+  
+
+
+
+body {
+  background-color: #FF5C00;
+  margin: 0; /* Fjerner standardmarginer */
+  font-family: 'Roboto Flex', sans-serif; /* Tilføjet skrifttype */
 }
 
 /* Hero Section */
@@ -72,7 +195,7 @@ body {
 
 .product {
   width: 45%; /* Juster bredden af produkterne for større skærme */
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Tilføj margin til bunden af boksene */
 }
 
 .product img {
@@ -80,6 +203,7 @@ body {
   height: auto;
   box-shadow: 5px 5px 5px 5px #3b3b3b;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
+  margin-bottom: 100px; /* Tilføj margin til bunden af billederne */
 }
 
 .product img:hover {
@@ -90,49 +214,12 @@ body {
 .product h3 {
   text-align: center;
   font-size: 2rem; /* Juster skriftstørrelsen for større skærme */
+  margin-bottom: 20px; /* Tilføj margin til bunden af overskrifterne */
 }
 
-/* Footer */
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-.footer-rækker {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
-}
-
-.footer h4, .footer p {
-  color: #000;
-  font-family: "Work Sans";
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: uppercase;
-}
 
 /* Media Queries for Responsiveness */
 @media only screen and (max-width: 1024px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .left-links, .right-links {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-  }
-
-  .company-name {
-    margin-top: 10px;
-  }
-
   .product {
     width: 90%; /* Juster bredden af produkterne for mindre skærme */
   }
@@ -141,3 +228,366 @@ body {
     font-size: 1.5rem; /* Juster skriftstørrelsen for mindre skærme */
   }
 }
+
+
+
+
+
+.footer {                    
+  display: flex;
+  flex-direction: column;
+}
+
+
+.footer p {                    
+  color: #363636;
+  font-family: "Work Sans";
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.footer h4 {                    
+  color: #000;
+  font-family: "Work Sans";
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.footer-rækker {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3%;
+  font-size: 2vw;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.copyrights{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2vw;
+  margin-left: 7%;
+  margin-right: 5%;
+
+}
+
+.logoer {
+  display: flex;
+  gap: 20%;
+  justify-content: end;
+  width: 10vw;
+  height: auto;
+}
+
+.jumbo-copy {
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+  align-items: center;
+}
+
+.footerline img {
+  height: auto;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  padding: 0.5rem 2rem;
+}
+
+#heroimg {
+  display: none;
+  width: 25vw;
+  height: auto;
+  margin-left: 50%;
+  margin-top: 15%;
+}
+
+#deskank {
+  display: none;
+  width: 30vw;
+}
+
+#instadesk {
+  display: none;
+  width: 50vw;
+  height: auto;
+}
+
+.location-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+hr {
+  margin: 1rem 1rem;
+  border-color: rgb(1, 1, 1);
+}
+
+#nyhedsbrevdesk {
+  display: none;
+  width: 60vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3% 0%;
+}
+
+.insta-logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+}
+
+@media only screen and (min-width: 1201px) {
+
+  .herotext {
+      display: flex;
+flex-direction: column;
+padding: 7rem 1rem;
+margin-left: 30%;
+  }
+
+  #heroimg {
+      display: block;
+      width: 25vw;
+      height: auto;
+      margin-left: 50%;
+      margin-top: 15%;
+  }
+
+  .herotext h1 {
+      color: #000;
+      font-family: "Roboto Flex";
+      font-size: 4rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 3.6875rem; /* 92.188% */
+      letter-spacing: 0.08rem;
+      padding-bottom: 2rem;
+      width: 80%;
+  }
+  
+  .herotext h3 {
+      color: #000;
+      font-family: "DM Sans";
+      font-size: 1.15rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.025rem;
+      width: 80%;
+}
+
+.text-image-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+  background-image: url(/images/bg1.png);
+  background-position: center;
+  background-size: cover;
+
+}
+
+.text-image-container  img {
+  height: auto;
+  width: 50vw;
+  display: none;
+}
+
+#deskank {
+  display: block;
+  width: 30vw;
+}
+
+.location {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.location-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  margin-top: 2%;
+}
+
+.location h1 {
+  color: #000;
+font-family: "Roboto Flex";
+font-size: 2.25rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.045rem;
+
+  }
+
+  .location h3 {
+      color: #000;
+font-family: "DM Sans";
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 50rem;
+
+      }
+
+      .location h4 {
+          color: #000;
+font-family: "DM Sans";
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: 0.1;
+
+          }
+          
+          .location img {
+              display: none;
+          height: auto;
+          width: 100vw;
+          padding: 0rem 1.5rem;
+              }
+
+              .instagram {
+                  margin-top: 5%;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-around;
+              }
+
+              .insta-logo-text {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  margin-bottom: 4rem;
+              }
+              .instagram h1 {
+                  color: #000;
+                  text-align: center;
+                  font-family: "Roboto Flex";
+                  font-size: 2rem;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  letter-spacing: 0.04rem;
+                  padding: 2rem;
+              }
+              .instagram svg {
+                  margin-bottom: 1rem;
+                  
+              }
+
+              .instagram img {
+                  height: auto;
+                  width: 100vw;
+                  padding: 0.5rem 1.5rem;
+                  display: none;
+              }
+              
+              #instadesk {
+                  display: block;
+                  width: 50vw;
+                  height: auto;
+              }
+              
+              .nyhedsbrev img {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  padding: 2rem 1.5rem;
+                  height: auto;
+                  width: 100vw;
+                  display: none;
+              }
+
+              #nyhedsbrevdesk {
+                  display: block;
+                  width: 60vw;
+                  height: auto;
+                  margin-left: auto;
+                  margin-right: auto;
+                  padding: 3% 0%;
+              }
+
+              .footer {                    
+                  display: flex;
+                  flex-direction: column;
+              }
+
+              
+              .footer p {                    
+                  color: #363636;
+                  font-family: "Work Sans";
+                  font-size: 1rem;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                  text-transform: uppercase;
+              }
+
+              .footer h4 {                    
+                  color: #000;
+                  font-family: "Work Sans";
+                  font-size: 2rem;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                  text-transform: uppercase;
+              }
+              
+              .footer-rækker {
+                  display: flex;
+                  justify-content: space-around;
+                  margin-bottom: 3%;
+                  font-size: 2vw;
+                  margin-left: 5%;
+                  margin-right: 5%;
+              }
+              
+              .copyrights{
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  font-size: 2rem;
+                  margin-left: 7%;
+                  margin-right: 5%;
+              
+              }
+              
+              .logoer {
+                  display: flex;
+                  gap: 20%;
+                  justify-content: end;
+                  width: 5rem;
+                  height: auto;
+              }
+              
+              .jumbo-copy {
+                  display: flex;
+                  gap: 10px;
+                  justify-content: start;
+                  align-items: center;
+              }
+
+              hr {
+                  margin: 1rem 1rem;
+                  border-color: rgb(1, 1, 1);
+              }
+      }

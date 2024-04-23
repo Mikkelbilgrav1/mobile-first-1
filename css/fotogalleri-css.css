@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +18,18 @@ nav {
     align-items: center;
     padding: 20px 74px;
 }
+
+/* Skygger */
+.billede1,
+.billede2,
+.billede3,
+.billede4,
+.billede5,
+.billede6 {
+    box-shadow: 5px 5px 5px 5px #3b3b3b;
+}
+
+
 
 .company-name {
     color: #000;
@@ -401,7 +414,23 @@ section p {
                     display: flex;
                     justify-content: space-evenly;
 
+
                 }
+
+                /* Center the entire container */
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Center the text underneath each photo */
+.text {
+    text-align: center;
+}
+
+
 
                 .location-text-container {
                     display: flex;
@@ -577,3 +606,98 @@ section p {
                                 }
                         }
             
+=======
+
+body {
+    background-color: #FF5C00;
+  }
+
+
+  
+
+  .galleri {
+    width: 50%; 
+    margin: 0 auto; 
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.footer .footer-link {                    
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #363636;
+    font-family: "Work Sans";
+    font-size: 0.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.footer-farve {
+    background-color: #d35b00;
+}
+
+
+.footer p {                    
+    color: #363636;
+    font-family: "Work Sans";
+    font-size: 0.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.footer h4 {                    
+    color: #000;
+    font-family: "Work Sans";
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.footer-rækker {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3%;
+    font-size: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.copyrights{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    margin-left: 7%;
+    margin-right: 5%;
+
+}
+
+.logoer {
+    display: flex;
+    gap: -10%;
+    justify-content: end;
+    margin-right: 3%;
+}
+
+.jumbo-copy {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    margin-left: 6%;
+}
+>>>>>>> Stashed changes
