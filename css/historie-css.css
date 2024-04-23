@@ -58,7 +58,8 @@ margin-right: 1em;
 /*  Media querries og størrelserne */
 
 /* ihpone 12-13-14 */ 
-@media screen and (max-width: 390px) {
+
+@media screen and (max-width: 391px) {
 
     .navbar {
         display: none;
@@ -75,7 +76,7 @@ margin-right: 1em;
         color: black;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 0.8rem;
         display: block;
         color: #000;
         font-family: "Work Sans";
@@ -90,6 +91,7 @@ margin-right: 1em;
       }
 
       .topnavmobile a.icon {
+        font-size: 1.5rem;
         background: rgba(0, 0, 0, 0);
         display: block;
         position: absolute;
@@ -98,6 +100,7 @@ margin-right: 1em;
       }
 
       .topnavmobile .active {
+        font-size: 1.5rem;
         color: #000;
         font-family: "Roboto Flex";
         font-style: normal;
@@ -179,10 +182,6 @@ margin-right: 1em;
         text-align: center;
     }
 
-    .footer-farve {
-        background-color: #d35b00;
-    }
-    
     hr {
         margin: 1rem 1rem;
         border-color: rgb(1, 1, 1);
@@ -227,6 +226,11 @@ margin-right: 1em;
         color: #363636;
     }
     
+    .footer-link-shop, .footer-link-billeder, .footer-link-lokationer, .footer-link-om-os, .footer-link-sortiment {
+        display: flex;
+        flex-direction: column;
+    }
+
     .copyrights{
         display: flex;
         justify-content: space-between;
@@ -261,6 +265,7 @@ margin-right: 1em;
     
 }
 
+
 /* Mellem størrelse, ipad osv. */
   @media screen and (min-width: 390px) {
     .navbar {
@@ -278,7 +283,7 @@ margin-right: 1em;
         color: black;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 0.8rem;
         display: block;
         color: #000;
         font-family: "Work Sans";
@@ -293,6 +298,7 @@ margin-right: 1em;
     }
 
     .topnavmobile a.icon {
+        font-size: 1.5rem;
         background: rgba(0, 0, 0, 0);
         display: block;
         position: absolute;
@@ -301,6 +307,7 @@ margin-right: 1em;
     }
 
     .topnavmobile .active {
+        font-size: 1.5rem;
         color: #000;
         font-family: "Roboto Flex";
         font-style: normal;
@@ -310,7 +317,7 @@ margin-right: 1em;
     }
     
     body {
-        background-color: #d35b00;
+        background-color: #FF5C00;
         margin: 0;
     
     }
@@ -377,6 +384,16 @@ margin-right: 1em;
         margin-bottom: 3%;
     }
     
+    .footer-link {
+        text-decoration: none;
+        color: #363636;
+    }
+    
+    .footer-link-shop, .footer-link-billeder, .footer-link-lokationer, .footer-link-om-os, .footer-link-sortiment {
+        display: flex;
+        flex-direction: column;
+    }
+
     .copyrights{
         display: flex;
         justify-content: space-between;
@@ -385,7 +402,6 @@ margin-right: 1em;
     
     .logoer {
         display: flex;
-        gap: -10%;
         justify-content: end;
         margin-right: 3%;
     }
@@ -549,10 +565,6 @@ margin-right: 1em;
     hr {
         margin: 1rem 1rem;
         border-color: rgb(1, 1, 1);
-    }
-
-    .footer-farve {
-        background-color: #86431c;
     }
 
     .footer {

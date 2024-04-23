@@ -181,6 +181,7 @@ width: 100vw;
 padding: 0rem 1.5rem;
                 }
 
+<<<<<<< Updated upstream
                 .instagram {
                     display: flex;
                     flex-direction: column;
@@ -281,3 +282,8 @@ padding: 0rem 1.5rem;
                     padding: 0.5rem 2rem;
                 }
   }
+=======
+    }
+}
+
+>>>>>>> Stashed changes
