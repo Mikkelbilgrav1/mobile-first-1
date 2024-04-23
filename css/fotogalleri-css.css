@@ -18,6 +18,18 @@ nav {
     padding: 20px 74px;
 }
 
+/* Skygger */
+.billede1,
+.billede2,
+.billede3,
+.billede4,
+.billede5,
+.billede6 {
+    box-shadow: 5px 5px 5px 5px #3b3b3b;
+}
+
+
+
 .company-name {
     color: #000;
     font-family: "Roboto Flex";
@@ -401,7 +413,23 @@ section p {
                     display: flex;
                     justify-content: space-evenly;
 
+
                 }
+
+                /* Center the entire container */
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Center the text underneath each photo */
+.text {
+    text-align: center;
+}
+
+
 
                 .location-text-container {
                     display: flex;
